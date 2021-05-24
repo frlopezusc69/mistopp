@@ -1,4 +1,6 @@
 const form = document.querySelector(".top-banner form");
+const input = document.querySelector(".top-banner input");
+const msg = document.querySelector(".top-banner msg");
 
 form.addEventListener("submit", e => {
     e.preventDefault();
@@ -42,7 +44,7 @@ msg.textContent = "";
 form.reset();
 input.focus();
 
-const listItems = list.querySelectorAll(".ajax-section .city");
+const listItems = list.querySelectorAll(" .city");
 const listItemsArray = Array.from(listItems);
 
 if (listItemsArray.length > 0) {
